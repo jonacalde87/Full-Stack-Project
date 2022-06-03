@@ -3,13 +3,15 @@ const Schema = mongoose.Schema
 
 //Travel blueprint
 const travelSchema = new Schema({
-    location: {
+    city: {
         type: String,
-        required: true
+        required: true,
+        enum:["Enterprise", "Dothan", "Troy", "Fort Rucker", "Daleville"]
     },
-    //Date,
-    cost: Number,
-    placesToVisit: String
+    restaurant: String,
+    hotel: String,
+    placesToVisit: String,
+    cost: Number
 })
 
 module.exports = mongoose.model('Travel', travelSchema)

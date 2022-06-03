@@ -1,16 +1,15 @@
 const express = require("express") //import express
 const app = express() // declare server variable
 const morgan = require('morgan')
-//const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 //middleware
 app.use(express.json())
 app.use(morgan('dev'))
 
 //connect to db
-
-
-
+mongoose.connect('mongodb://localhost:27017/travelLogDB',
+() => console.log('Connected to database'))
 
 //routes
 app.use('/travel', require('./routes/travelRouter'))
