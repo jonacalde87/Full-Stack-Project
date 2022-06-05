@@ -6,7 +6,7 @@ const travelSchema = new Schema({
     city: {
         type: String,
         required: true,
-        enum:["Enterprise", "Dothan", "Troy", "Fort Rucker", "Daleville"]
+        enum:["Enterprise", "Dothan", "Ozark", "Fort Rucker", "Daleville"]
     },
     restaurant: String,
     hotel: String,
