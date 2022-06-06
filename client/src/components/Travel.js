@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TravelLogForm from './TravelLogForm' //for put request
+import RollTide from '../images/RollTide.bmp'
 
 export default function Travel(props) {
   // console.log(props)
@@ -17,7 +18,12 @@ export default function Travel(props) {
   const [editToggle, setEditToggle] = useState(false)
 
   return (
-    <div style={{ border: "1px solid black" }}>
+    <div style={{ 
+      border: "1px solid white",
+      fontSize:"20px",
+      color:"white", 
+      backgroundImage: `url(${RollTide})`}}>
+      
 
       {!editToggle ?
         <>

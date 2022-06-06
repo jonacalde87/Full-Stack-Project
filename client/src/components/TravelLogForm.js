@@ -17,7 +17,7 @@ export default function TravelLogForm(props) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(inputs)
+        // console.log(inputs)
         //post request
         props.submit(inputs, props._id)
         setInputs(initialInputs)
