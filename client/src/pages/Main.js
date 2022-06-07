@@ -35,6 +35,7 @@ export default function App() {
     }
     //PUT request (edit)
     function editTravelLog(updates, travelID) {
+        console.log(travelID)
         axios.put(`/travel/${travelID}`, updates)
             // .then(res => console.log(res))
             .then(res => {

@@ -14,7 +14,7 @@ export default function App() {
         <nav className="nav-bar" >
           <Link to="/">Home</Link>
           <Link to="/travel">Travel Log</Link>
-          <Link to="/about">About us</Link>
+          <Link to="/about">About me</Link>
         </nav>
           <Routes>
             <Route path="/" element={<Home />} />

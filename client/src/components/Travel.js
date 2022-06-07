@@ -24,7 +24,6 @@ export default function Travel(props) {
       color:"white", 
       backgroundImage: `url(${RollTide})`}}>
       
-
       {!editToggle ?
         <>
           <h1>City: {city}</h1>
