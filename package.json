@@ -5,11 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonacalde87/Full-Stack-Project.git"
+  },
+  "engines": {
+    "node": "16.14.1"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +24,7 @@
   "homepage": "https://github.com/jonacalde87/Full-Stack-Project#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.5",
     "morgan": "^1.10.0",
